@@ -1,0 +1,4 @@
+requests
+Werkzeug
+matplotlib
+flask

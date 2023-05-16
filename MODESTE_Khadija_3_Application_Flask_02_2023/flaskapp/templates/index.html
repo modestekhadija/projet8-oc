@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<link rel="stylesheet" href="/static/css/index_style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Vision Transport </title>
+    <link rel="shortcut icon" href="/static/logo/favicon.png" type="image/png">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Future Transport Vision
+        </div>
+    </header>
+
+    <main>
+        <h1>Ségmentation sémantique des images</h1>
+        <div class="images">
+            <div>
+                <h3>L'image à segmenter</h2>  
+                <img src="{{ url }}" alt="Image à segmenter">
+            </div>
+        </div>
+    
+        <form action= '{{ url_for("show_mask", filename=filename) }}'>
+          <button type="submit">Prédict mask</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer">
+            Réalisé par Khadija Modeste
+        </div>
+    </footer>
+
+</body>
+</html>
